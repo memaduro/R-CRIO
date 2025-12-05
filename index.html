@@ -73,12 +73,83 @@
       font-size: 14px;
     }
 
-    /* ------------------------------------ */
-    /* RESPONSIVIDADE MOBILE */
-    /* ------------------------------------ */
     @media (max-width: 768px) {
       header img {
         height: 60px;
       }
 
       h1 {
+        font-size: 22px;
+        padding: 0 10px;
+      }
+
+      p {
+        font-size: 16px;
+        padding: 0 14px;
+      }
+
+      .img-section {
+        gap: 20px;
+      }
+
+      .img-section img {
+        max-width: 260px;
+      }
+
+      .chat-title {
+        font-size: 22px;
+        margin-top: 25px;
+      }
+
+      chatvolt-chatbox-standard {
+        height: 500px !important;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .img-section img {
+        max-width: 220px;
+      }
+      chatvolt-chatbox-standard {
+        height: 460px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="Logo_R-CRIO.png" alt="R-CRIO Logo" />
+</header>
+
+<h1>Bem-vindo à Fadinha Lily • Assistente Inteligente da R-CRIO</h1>
+<p>
+  Tire suas dúvidas sobre coleta, armazenamento e benefícios das células-tronco 
+  do dente de leite — de forma rápida e amigável!
+</p>
+
+<div class="img-section">
+  <img src="Fadinha_Lily.png" alt="Fadinha Lily" />
+  <img src="VoceSabia.png" alt="Você Sabia R-CRIO" />
+</div>
+
+<div class="chat-title">Atendimento Instantâneo</div>
+
+<!-- CHATVOLT -->
+<script type="module">
+  import Chatbox from 'https://cdn.jsdelivr.net/npm/@chatvolt/embeds@latest/dist/chatbox/index.js';
+
+  Chatbox.initStandard({
+    agentId: 'cmi9mz0bb0ok1j6q8f6svpyjt',
+  });
+</script>
+
+<chatvolt-chatbox-standard style="width: 100%; height: 650px"></chatvolt-chatbox-standard>
+
+<footer>
+  © 2025 R-CRIO Células-Tronco • Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
