@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R-CRIO • Fadinha Lily</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #003C4F 0%, #00556F 100%);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+    }
+
+    header img {
+      height: 70px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .img-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .img-section img {
+      max-width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- COLOQUE O ARQUIVO rcrio_logo.png NA PASTA /public -->
+  <img src="rcrio_logo.png" alt="R-CRIO Logo" />
+</header>
+
+<div class="container">
+  <h1>Bem-vindo à Fadinha Lily • Assistente Inteligente da R-CRIO</h1>
+  <p>Fale com a Fadinha Lily e descubra tudo sobre a coleta e preservação de células-tronco!</p>
+
+  <div class="img-section">
+    <!-- Imagem da Fadinha Lily -->
+    <img src="Fadinha_Lily.png" alt="Fadinha Lily" />
+
+    <!-- Imagem "Você Sabia" -->
+    <img src="VoceSabia.png" alt="Você Sabia R-CRIO" />
+  </div>
+
+  <h2 style="margin-top: 40px;">Atendimento Instantâneo</h2>
+</div>
+
+<!-- CHATVOLT AGENTE FADINHA LILY -->
+<script type="module">
+import Chatbox from 'https://cdn.jsdelivr.net/npm/@chatvolt/embeds@latest/dist/chatbox/index.js';
+
+Chatbox.initStandard({
+  agentId: 'cmi9mz0bb0ok1j6q8f6svpyjt',
+});
+</script>
+
+<chatvolt-chatbox-standard style="width: 100%; height: 650px"></chatvolt-chatbox-standard>
+
+<footer>
+  © 2025 R-CRIO Células-Tronco • Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
